@@ -34,6 +34,10 @@ The imbalance is compared with an adaptive threshold based on the average State 
 - Arduino C++
 - Wokwi Simulator
 - GitHub
+  
+## Wokwi Simulation
+
+[Open Task 1 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)  
 
 ## Current Configuration
 
