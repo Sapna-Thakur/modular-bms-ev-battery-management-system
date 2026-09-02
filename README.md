@@ -46,12 +46,12 @@ The current implementation uses 4 simulated battery cells.
 The architecture is designed so that the cell count can be modified using:
 
 ```cpp
-#define CELL_COUNT 4
+
 ## Task 2 – Non-Blocking Protection Relay and Safety System
 
-This project implements a non-blocking Battery Management System (BMS) safety and protection system using ESP32 and Wokwi simulation.
+This project implements a non-blocking protection relay and battery safety system using ESP32 and Wokwi simulation.
 
-The system continuously monitors multiple battery cells and detects unsafe conditions to protect the battery system.
+The system continuously monitors multiple battery cells and detects unsafe voltage and sensor conditions to protect the battery system.
 
 ## Features
 
@@ -63,28 +63,16 @@ The system continuously monitors multiple battery cells and detects unsafe condi
 - Fault debouncing
 - Protection relay control
 - Automatic recovery verification
-- Hysteresis-based recovery system
-- Non-blocking operation using `millis()`
-- Safety state machine implementation
+- Hysteresis-based recovery
+- Non-blocking periodic updates using `millis()`
 
 ## Working Principle
 
-The system continuously monitors the voltage of multiple battery cells.
+The system monitors the voltage of multiple battery cells continuously.
 
-When an unsafe condition is detected, the system first verifies the fault using a debounce period.
+When an unsafe condition is detected, the system verifies the fault using a debounce period. Once the fault is confirmed, the protection relay turns OFF to protect the battery.
 
-Once the fault is confirmed, the protection relay is turned OFF and the system enters the `FAULT_ACTIVE` state.
-
-After the battery returns to safe operating conditions, the system verifies the recovery condition for a specified time before turning the relay ON again.
-
-## Safety States
-
-The system uses the following safety states:
-
-- `NORMAL`
-- `DEBOUNCING`
-- `FAULT_ACTIVE`
-- `RECOVERY_VERIFYING`
+After the battery returns to safe operating conditions, the system verifies the recovery condition before turning the relay ON again.
 
 ## Technology Used
 
@@ -95,8 +83,7 @@ The system uses the following safety states:
 
 ## Wokwi Simulation
 
-[Open Task 2 Wokwi Simulation](PASTE_YOUR_WOKWI_LINK_HERE)
-https://wokwi.com/projects/474042704490273793
+[Open Task 2 Wokwi Simulation]https://wokwi.com/projects/474042704490273793
 
 ## Current Configuration
 
@@ -105,6 +92,4 @@ The current implementation uses 4 simulated battery cells.
 The safety system monitors the cells using:
 
 ```cpp
-#define CELL_COUNT 4
-
 
