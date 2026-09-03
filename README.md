@@ -98,3 +98,62 @@ The safety system monitors the cells using:
 ```cpp
 #define CELL_COUNT 4
 ```
+# Task 3 – Flicker-Free LCD Display Engine
+
+This project implements a flicker-free LCD display engine using ESP32 and Wokwi simulation.
+
+The system displays battery and safety information on a 16x2 I2C LCD while updating only the portions of the display whose values have changed.
+
+## Features
+
+* Flicker-free LCD updates
+* Updates only changed display content
+* Battery status display
+* System state display
+* Telemetry information display
+* Automatic page rotation
+* Critical fault screen override
+* Non-blocking display refresh using `millis()`
+* Non-blocking page rotation using `millis()`
+
+## Working Principle
+
+The LCD display engine stores the previously displayed content and compares it with the current display values.
+
+Only the LCD lines whose content has changed are updated. This eliminates unnecessary screen clearing and reduces visible flickering.
+
+The display automatically rotates between three information pages using a non-blocking timer.
+
+The information pages include Battery Status, System State, and Telemetry Information.
+
+During an active critical fault, the LCD immediately overrides the normal page rotation and displays a dedicated fault screen showing the active fault.
+
+The normal information pages return only after the fault is cleared.
+
+The LCD refresh interval is selected to provide responsive information updates while reducing unnecessary I2C communication and display flickering.
+
+## Technology Used
+
+* ESP32
+* Arduino C++
+* 16x2 I2C LCD
+* Wokwi Simulator
+* GitHub
+
+## Wokwi Simulation
+
+[Open Task 3 Wokwi Simulation)https://wokwi.com/projects/474042704490273793
+
+## Current Configuration
+
+The current implementation uses a 16x2 I2C LCD connected to the ESP32.
+
+The LCD automatically rotates between three information pages:
+
+* Battery Status
+* System State
+* Telemetry Information
+
+The LCD uses a non-blocking refresh and page rotation system based on `millis()`.
+
+During a critical fault, the display immediately switches to a dedicated fault screen until the fault is cleared.
