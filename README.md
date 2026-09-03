@@ -142,7 +142,7 @@ The LCD refresh interval is selected to provide responsive information updates w
 
 ## Wokwi Simulation
 
-[Open Task 3 Wokwi Simulation)https://wokwi.com/projects/474042704490273793
+https://wokwi.com/projects/474042704490273793
 
 ## Current Configuration
 
