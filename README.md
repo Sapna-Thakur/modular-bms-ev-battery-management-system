@@ -34,10 +34,10 @@ The imbalance is compared with an adaptive threshold based on the average State 
 - Arduino C++
 - Wokwi Simulator
 - GitHub
-  
+
 ## Wokwi Simulation
 
-[Open Task 1 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)  
+[Open Task 1 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)
 
 ## Current Configuration
 
@@ -46,8 +46,12 @@ The current implementation uses 4 simulated battery cells.
 The architecture is designed so that the cell count can be modified using:
 
 ```cpp
+#define CELL_COUNT 4
+```
 
-## Task 2 – Non-Blocking Protection Relay and Safety System
+---
+
+# Task 2 – Non-Blocking Protection Relay and Safety System
 
 This project implements a non-blocking protection relay and battery safety system using ESP32 and Wokwi simulation.
 
@@ -83,7 +87,7 @@ After the battery returns to safe operating conditions, the system verifies the 
 
 ## Wokwi Simulation
 
-[Open Task 2 Wokwi Simulation]https://wokwi.com/projects/474042704490273793
+[Open Task 2 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)
 
 ## Current Configuration
 
@@ -92,4 +96,5 @@ The current implementation uses 4 simulated battery cells.
 The safety system monitors the cells using:
 
 ```cpp
-
+#define CELL_COUNT 4
+```
