@@ -157,3 +157,70 @@ The LCD automatically rotates between three information pages:
 The LCD uses a non-blocking refresh and page rotation system based on `millis()`.
 
 During a critical fault, the display immediately switches to a dedicated fault screen until the fault is cleared.
+
+# Task 4 – Fault State Machine with Structured Recovery
+
+This project implements a deterministic fault state machine for an ESP32-based EV Battery Management System (BMS).
+
+The system uses four operating states: NORMAL, DEGRADED, FAILSAFE, and SHUTDOWN. The state machine manages different fault conditions and provides structured recovery handling.
+
+**## Features**
+
+- Four operating states using enum
+- Clearly defined state transition logic
+- Battery cell fault detection
+- Relay mismatch detection
+- Communication fault detection
+- ADC fault detection
+- Frozen ADC value detection
+- Fault source identification and tracking
+- Structured state transition logging
+- Timestamp logging
+- Previous and new state logging
+- Fault ID logging
+- Verified FAILSAFE recovery
+- Latched SHUTDOWN state
+- Deterministic and deadlock-free operation
+
+**## Working Principle**
+
+The system continuously monitors battery cells, relay status, communication conditions, and ADC values.
+
+When a fault is detected, the system identifies the fault source and assigns a fault ID. The state machine then transitions to the appropriate operating state according to the defined transition logic.
+
+The system detects conditions such as frozen ADC values and relay command/feedback mismatches.
+
+Every state transition is recorded with a timestamp, previous state, new state, and fault ID in a structured format.
+
+Recovery from FAILSAFE is performed only after verifying that the fault condition has been cleared and the required safety conditions are satisfied. The system does not immediately return to NORMAL without verification.
+
+Critical faults can move the system to the SHUTDOWN state. The SHUTDOWN state is latched to prevent unsafe automatic restart.
+
+**## Fault Sources**
+
+- Battery Cells
+- Relay
+- Communication
+- ADC
+
+**## Operating States**
+
+- NORMAL
+- DEGRADED
+- FAILSAFE
+- SHUTDOWN
+
+**## Technology Used**
+
+- ESP32
+
+- Arduino C++
+
+- Wokwi Simulator
+
+- GitHub
+
+**## Wokwi Simulation**
+
+[Open Task 4 Wokwi Simulation]
+
