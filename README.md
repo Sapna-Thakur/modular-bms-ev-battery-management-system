@@ -157,70 +157,124 @@ The LCD automatically rotates between three information pages:
 The LCD uses a non-blocking refresh and page rotation system based on `millis()`.
 
 During a critical fault, the display immediately switches to a dedicated fault screen until the fault is cleared.
+---
 
 # Task 4 – Fault State Machine with Structured Recovery
 
 This project implements a deterministic fault state machine for an ESP32-based EV Battery Management System (BMS).
 
-The system uses four operating states: NORMAL, DEGRADED, FAILSAFE, and SHUTDOWN. The state machine manages different fault conditions and provides structured recovery handling.
+The system uses four operating states: NORMAL, DEGRADED, FAILSAFE, and SHUTDOWN. It identifies different fault sources and provides structured fault recovery.
 
-**## Features**
+## Features
 
 - Four operating states using enum
 - Clearly defined state transition logic
-- Battery cell fault detection
+- Battery cell fault identification
 - Relay mismatch detection
-- Communication fault detection
-- ADC fault detection
+- Communication fault identification
+- ADC fault identification
 - Frozen ADC value detection
-- Fault source identification and tracking
+- Fault source tracking
 - Structured state transition logging
 - Timestamp logging
-- Previous and new state logging
+- Previous state and new state logging
 - Fault ID logging
-- Verified FAILSAFE recovery
+- FAILSAFE recovery verification
 - Latched SHUTDOWN state
 - Deterministic and deadlock-free operation
 
-**## Working Principle**
+## Working Principle
 
 The system continuously monitors battery cells, relay status, communication conditions, and ADC values.
 
-When a fault is detected, the system identifies the fault source and assigns a fault ID. The state machine then transitions to the appropriate operating state according to the defined transition logic.
+When a fault is detected, the system identifies the fault source and assigns a fault ID. The state machine then performs the appropriate state transition according to the defined transition logic.
 
-The system detects conditions such as frozen ADC values and relay command/feedback mismatches.
+Frozen ADC values and relay command/feedback mismatches are detected to identify abnormal system conditions.
 
-Every state transition is recorded with a timestamp, previous state, new state, and fault ID in a structured format.
+Every state transition is logged with a timestamp, previous state, new state, and fault ID in a structured format.
 
-Recovery from FAILSAFE is performed only after verifying that the fault condition has been cleared and the required safety conditions are satisfied. The system does not immediately return to NORMAL without verification.
+Recovery from FAILSAFE is performed only after verifying that the fault condition has been cleared and the required safety conditions are satisfied.
 
 Critical faults can move the system to the SHUTDOWN state. The SHUTDOWN state is latched to prevent unsafe automatic restart.
 
-**## Fault Sources**
-
-- Battery Cells
-- Relay
-- Communication
-- ADC
-
-**## Operating States**
-
-- NORMAL
-- DEGRADED
-- FAILSAFE
-- SHUTDOWN
-
-**## Technology Used**
+## Technology Used
 
 - ESP32
-
 - Arduino C++
-
 - Wokwi Simulator
-
 - GitHub
 
-**## Wokwi Simulation**
+## Wokwi Simulation
 
-[Open Task 4 Wokwi Simulation]https://wokwi.com/projects/474042704490273793
+[Open Task 4 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)
 
+## Current Configuration
+
+The current implementation uses 4 simulated battery cells.
+
+The fault state machine monitors battery cells, relay status, communication conditions, and ADC values.
+
+---
+
+# Task 5 – Event-Driven Telemetry and Live Blynk Dashboard
+
+This project implements an event-driven telemetry system for an ESP32-based EV Battery Management System (BMS).
+
+The system transmits telemetry data only when meaningful events or significant parameter changes occur. When Wi-Fi or Blynk connectivity is lost, telemetry events are stored in a fixed-size offline queue and transmitted in FIFO order after connectivity is restored.
+
+## Features
+
+- Event-driven telemetry
+- Meaningful parameter change detection
+- Real-time cell voltage monitoring
+- Weakest cell identification
+- Strongest cell identification
+- Relay status monitoring
+- Fault state monitoring
+- Wi-Fi connectivity monitoring
+- RSSI monitoring
+- Fixed-size offline telemetry queue
+- FIFO queued event transmission
+- Queue full handling
+- Non-blocking Wi-Fi reconnection state machine
+- Live Blynk dashboard
+- LIVE and QUEUED telemetry indication
+- Network outage demonstration
+- Fault injection demonstration
+
+## Working Principle
+
+The system continuously monitors battery parameters and communication status.
+
+Telemetry events are generated only when meaningful changes occur, such as significant cell voltage changes, RSSI changes, relay changes, fault changes, system state changes, or connectivity changes.
+
+When Wi-Fi or Blynk connectivity is unavailable, meaningful telemetry events are stored in a fixed-size offline queue.
+
+After connectivity is restored, the queued events are transmitted in FIFO order before new live telemetry events.
+
+The Wi-Fi connection is managed using a non-blocking state machine with DISCONNECTED, CONNECTING, and CONNECTED states.
+
+The RSSI value is monitored to assess Wi-Fi communication quality.
+
+## Technology Used
+
+- ESP32
+- Arduino C++
+- Blynk IoT
+- Wi-Fi
+- Wokwi Simulator
+- GitHub
+
+## Wokwi Simulation
+
+[Open Task 5 Wokwi Simulation]https://wokwi.com/projects/474042704490273793
+
+## Current Configuration
+
+The current implementation uses 4 simulated battery cells.
+
+The telemetry system monitors cell voltages, weakest and strongest cells, relay status, fault state, Wi-Fi connectivity, RSSI, and offline queue depth.
+
+The offline queue can store up to 12 telemetry events.
+
+The Blynk dashboard displays real-time battery and communication information and distinguishes between LIVE and QUEUED telemetry.
