@@ -222,5 +222,5 @@ Critical faults can move the system to the SHUTDOWN state. The SHUTDOWN state is
 
 **## Wokwi Simulation**
 
-[Open Task 4 Wokwi Simulation]
+[Open Task 4 Wokwi Simulation]https://wokwi.com/projects/474042704490273793
 
