@@ -1,0 +1,4807 @@
+
+
+GND
+SIG
+VCC
+
+GND
+SIG
+VCC
+
+GND
+SIG
+VCC
+
+GND
+SIG
+VCC
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+[WIFI] Starting connection...
+
+========================================
+        ESP32 EV BMS
+        FINAL SYSTEM
+        TASK 1 - TASK 6
+========================================
+
+COMMANDS:
+F = Inject battery fault
+C = Clear fault
+N = Network outage
+R = Restore network
+
+[BMS] Cells: 3.82 | 3.76 | 3.88 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 82.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 1 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.82 | 3.76 | 3.88 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 82.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 2 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.82 | 3.76 | 3.88 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 82.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 3 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> WIFI CONNECTED <<<
+[WIFI] RSSI: -91 dBm
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.82 | 3.76 | 3.88 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 82.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 4 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.82 | 3.76 | 3.88 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 5 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 6 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 7 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 8 sec
+Recommendation: Check cell balancing
+========================================
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 10 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 11 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 13 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> BLYNK CONNECTED <<<
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 16 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 19 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 22 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.81 | 3.75 | 3.89 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 24 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 27 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 29 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 32 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 34 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 37 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 40 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 42 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 45 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 47 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.80 | 3.74 | 3.90 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 50 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 53 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 55 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 58 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 61 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.230 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 69.3%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.230 V
+Risk Score: 30.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 63 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> BATTERY FAULT INJECTION <<<
+Cell 4 = 3.05 V
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 60.0%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 40.0/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 66 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+>>> PROTECTION FAULT CONFIRMED <<<
+Fault ID: 1
+Source: BATTERY
+Fault: UNDER_VOLTAGE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 60.0%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 40.0/100
+Risk Level: MEDIUM
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 69 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== STATE TRANSITION ==========
+Timestamp: 74922
+Previous: NORMAL
+New: FAILSAFE
+Fault ID: 1
+======================================
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 72 sec
+Recommendation: Inspect affected battery cell
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 75 sec
+Recommendation: Verify battery safety
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 78 sec
+Recommendation: Verify battery safety
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 80 sec
+Recommendation: Verify battery safety
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.860 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.860 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 83 sec
+Recommendation: Verify battery safety
+========================================
+
+>>> FAULT CLEAR REQUESTED <<<
+[RECOVERY] Safety verification active
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: DECREASING
+
+========== STATE TRANSITION ==========
+Timestamp: 88436
+Previous: FAILSAFE
+New: DEGRADED
+Fault ID: 1
+======================================
+[RECOVERY] Verification started
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 85 sec
+Recommendation: Verify battery safety
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+[RECOVERY] Safety verified - Relay ON
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 89 sec
+Recommendation: Inspect affected battery cell
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== STATE TRANSITION ==========
+Timestamp: 95172
+Previous: DEGRADED
+New: NORMAL
+Fault ID: 1
+======================================
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 92 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 95 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.79 | 3.73 | 3.91 | 3.65
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 98 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 101 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 103 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 106 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> OFFLINE MODE ENABLED <<<
+
+>>> NETWORK OUTAGE SIMULATED <<<
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 108 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 109 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 110 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 111 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 112 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 113 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.78 | 3.72 | 3.92 | 3.66
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 114 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 115 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 116 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 117 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 118 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 119 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 120 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 121 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 122 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 123 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.77 | 3.71 | 3.93 | 3.67
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 124 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 125 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 126 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 127 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 128 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 129 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 130 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 131 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 132 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 133 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.76 | 3.70 | 3.94 | 3.68
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 134 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 135 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 136 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 137 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 138 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.260 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.3%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.260 V
+Risk Score: 44.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 139 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.262 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 55.1%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.262 V
+Risk Score: 44.9/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 140 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.264 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 54.8%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.264 V
+Risk Score: 45.2/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 141 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.266 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 54.5%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.266 V
+Risk Score: 45.5/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 0
+Uptime: 142 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.268 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 54.3%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.268 V
+Risk Score: 45.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 143 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.75 | 3.69 | 3.95 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.270 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 54.0%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.270 V
+Risk Score: 46.0/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 144 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.272 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 53.7%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.272 V
+Risk Score: 46.3/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 1
+Uptime: 145 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.274 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 53.5%
+SoC: 81.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.274 V
+Risk Score: 46.5/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 2
+Uptime: 146 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.276 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 53.2%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.276 V
+Risk Score: 46.8/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 2
+Uptime: 147 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.278 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 52.9%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.278 V
+Risk Score: 47.1/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 2
+Uptime: 148 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.280 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 52.7%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.280 V
+Risk Score: 47.3/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 3
+Uptime: 149 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.282 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 52.4%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.282 V
+Risk Score: 47.6/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 3
+Uptime: 150 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.284 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 52.1%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.284 V
+Risk Score: 47.9/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 3
+Uptime: 151 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.286 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 51.9%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.286 V
+Risk Score: 48.1/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 4
+Uptime: 152 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.288 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 51.6%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.288 V
+Risk Score: 48.4/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 4
+Uptime: 153 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> NETWORK RESTORE REQUESTED <<<
+[WIFI] Starting connection...
+[BMS] Cells: 3.74 | 3.68 | 3.96 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.290 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 51.3%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.290 V
+Risk Score: 48.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 4
+Uptime: 154 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.292 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 51.1%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.292 V
+Risk Score: 48.9/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 5
+Uptime: 155 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> WIFI CONNECTED <<<
+[WIFI] RSSI: -95 dBm
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.294 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.8%
+SoC: 81.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.294 V
+Risk Score: 49.2/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 5
+Uptime: 158 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> BLYNK CONNECTED <<<
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.296 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.5%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.296 V
+Risk Score: 49.5/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 5
+Uptime: 161 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.298 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.3%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.298 V
+Risk Score: 49.7/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 5
+Uptime: 164 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.300 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.300 V
+Risk Score: 50.0/100
+Risk Level: MEDIUM
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: NORMAL
+Queue Depth: 4
+Uptime: 167 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.302 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== STATE TRANSITION ==========
+Timestamp: 173861
+Previous: NORMAL
+New: DEGRADED
+Fault ID: 1
+======================================
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.302 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 3
+Uptime: 171 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.304 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.304 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 3
+Uptime: 174 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.306 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.306 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 2
+Uptime: 178 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.308 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.308 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 1
+Uptime: 181 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.73 | 3.67 | 3.97 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.310 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.310 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 1
+Uptime: 184 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.312 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.312 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 188 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.314 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 81.0%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.314 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 190 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.316 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.316 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 194 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.318 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.318 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 196 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.320 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.320 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 199 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.322 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.322 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 202 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.324 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.324 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 205 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.326 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.326 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 207 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.328 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.328 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 211 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.72 | 3.66 | 3.98 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.330 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.330 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 214 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.73
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.332 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.332 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 216 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.73
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.334 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.9%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.334 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 220 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.73
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.336 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.336 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 222 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.73
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.338 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.338 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 225 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.73
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.340 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.340 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 228 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.73
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.342 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.342 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 231 sec
+Recommendation: Check cell balancing
+========================================
+
+>>> BATTERY FAULT INJECTION <<<
+Cell 4 = 3.05 V
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.941 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.941 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 233 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.941 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+>>> PROTECTION FAULT CONFIRMED <<<
+Fault ID: 2
+Source: BATTERY
+Fault: UNDER_VOLTAGE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 50.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.941 V
+Risk Score: 50.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 237 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.941 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== STATE TRANSITION ==========
+Timestamp: 242498
+Previous: DEGRADED
+New: FAILSAFE
+Fault ID: 2
+======================================
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.941 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 239 sec
+Recommendation: Inspect affected battery cell
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.941 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.941 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 243 sec
+Recommendation: Verify battery safety
+========================================
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.05
+[BMS] Weakest: Cell 4
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.941 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: STABLE
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 4
+Strongest Cell: Cell 3
+Imbalance: 0.941 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 245 sec
+Recommendation: Verify battery safety
+========================================
+
+>>> FAULT CLEAR REQUESTED <<<
+[RECOVERY] Safety verification active
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.65
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.344 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: DECREASING
+[RECOVERY] Verification started
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.8%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.344 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: OFF
+Fault: UNDER_VOLTAGE
+Fault Source: BATTERY
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 248 sec
+Recommendation: Verify battery safety
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.65
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.346 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+[RECOVERY] Safety verified - Relay ON
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.346 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: FAILSAFE
+Queue Depth: 0
+Uptime: 251 sec
+Recommendation: Verify battery safety
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.65
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.348 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== STATE TRANSITION ==========
+Timestamp: 257646
+Previous: FAILSAFE
+New: DEGRADED
+Fault ID: 2
+======================================
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.348 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 254 sec
+Recommendation: Verify battery safety
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.71 | 3.65 | 3.99 | 3.65
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.350 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.350 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 258 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.65
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.352 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.352 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 261 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.354 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.354 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 263 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.356 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.356 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 267 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.358 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.358 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 269 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.360 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.360 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 272 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.362 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.362 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 275 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.364 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.7%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.364 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 278 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.366 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.366 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 280 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.368 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.368 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 284 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.70 | 3.64 | 4.00 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.370 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.370 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 286 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.66
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.372 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.372 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 289 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.374 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.374 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 292 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.376 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.376 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 295 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.378 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.378 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 298 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.380 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.380 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 301 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.382 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.382 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 304 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.384 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.6%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.384 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 306 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.386 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.386 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 310 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.388 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.388 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 312 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.69 | 3.63 | 4.01 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.390 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.390 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 315 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.67
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.392 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.392 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 318 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.394 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.394 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 321 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.396 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.396 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 323 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.398 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.398 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 327 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.400 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.400 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 329 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.402 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.402 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 332 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.404 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.5%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.404 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 335 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.406 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.406 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 338 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.408 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.408 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 340 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.68 | 3.62 | 4.02 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.410 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.410 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 344 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.68
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.412 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.412 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 347 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.414 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.414 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 349 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.416 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.416 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 353 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.418 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.418 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 355 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.420 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.420 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 358 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.422 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.422 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 361 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.424 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.4%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.424 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 364 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.426 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.426 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 366 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.428 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.428 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 370 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.67 | 3.61 | 4.03 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.430 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.430 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 372 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.69
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.432 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.432 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 375 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.434 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.434 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 378 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.436 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.436 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 381 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.438 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.438 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 383 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.440 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.440 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 387 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.442 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.442 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 390 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.444 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.3%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.444 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 392 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.446 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.446 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 396 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.448 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.448 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 398 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.66 | 3.60 | 4.04 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.450 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.450 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 401 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.65 | 3.59 | 4.05 | 3.70
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.452 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.452 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 404 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.65 | 3.59 | 4.05 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.454 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.454 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 407 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.65 | 3.59 | 4.05 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.456 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.456 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 409 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BMS] Cells: 3.65 | 3.59 | 4.05 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.458 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.458 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 413 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.65 | 3.59 | 4.05 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.460 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.460 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 415 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.65 | 3.59 | 3.88 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.291 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: DECREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 41.2%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.291 V
+Risk Score: 58.8/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 418 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] LIVE EVENT
+[TELEMETRY] Queued event transmitted
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.65 | 3.59 | 3.88 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.293 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.9%
+SoC: 80.2%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.293 V
+Risk Score: 59.1/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 419 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.65 | 3.59 | 3.88 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.295 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.7%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.295 V
+Risk Score: 59.3/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 420 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.65 | 3.59 | 3.88 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.297 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.4%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.297 V
+Risk Score: 59.6/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 0
+Uptime: 421 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BMS] Cells: 3.65 | 3.59 | 3.88 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.299 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.1%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.299 V
+Risk Score: 59.9/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 1
+Uptime: 422 sec
+Recommendation: Check cell balancing
+========================================
+[BMS] Cells: 3.64 | 3.58 | 3.88 | 3.71
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.301 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.301 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 1
+Uptime: 423 sec
+Recommendation: Check cell balancing
+========================================
+[BLYNK] Connection attempt...
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.64 | 3.58 | 3.89 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.303 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.303 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 1
+Uptime: 464 sec
+Recommendation: Check cell balancing
+========================================
+[TELEMETRY] QUEUED EVENT
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.64 | 3.58 | 3.89 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.305 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.305 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 2
+Uptime: 485 sec
+Recommendation: Check cell balancing
+========================================
+[BLYNK] Connection attempt...
+[BMS] Cells: 3.64 | 3.58 | 3.89 | 3.72
+[BMS] Weakest: Cell 2
+[BMS] Strongest: Cell 3
+[BMS] Imbalance: 0.307 V
+[BMS] Adaptive Threshold: 0.080 V
+[BMS] Trend: INCREASING
+
+========== EXECUTIVE SUMMARY ==========
+Battery Health: 40.0%
+SoC: 80.1%
+Temperature: 22.0 C
+Weakest Cell: Cell 2
+Strongest Cell: Cell 3
+Imbalance: 0.307 V
+Risk Score: 60.0/100
+Risk Level: HIGH
+Relay: ON
+Fault: NO_FAULT
+Fault Source: NONE
+Current State: DEGRADED
+Queue Depth: 2
+Uptime: 506 sec
+Recommendation: Check cell balancing
+========================================
