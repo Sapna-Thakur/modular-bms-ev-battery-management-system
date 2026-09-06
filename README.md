@@ -1,4 +1,4 @@
-# Modular BMS EV Battery Management
+# EV Battery Management System using ESP32
 
 ## Task 1 – Modular Battery Management Engine
 
@@ -37,7 +37,7 @@ The imbalance is compared with an adaptive threshold based on the average State 
 
 ## Wokwi Simulation
 
-[Open Task 1 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)
+https://wokwi.com/projects/474042704490273793
 
 ## Current Configuration
 
@@ -87,7 +87,7 @@ After the battery returns to safe operating conditions, the system verifies the 
 
 ## Wokwi Simulation
 
-[Open Task 2 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)
+https://wokwi.com/projects/474042704490273793
 
 ## Current Configuration
 
@@ -206,7 +206,7 @@ Critical faults can move the system to the SHUTDOWN state. The SHUTDOWN state is
 
 ## Wokwi Simulation
 
-[Open Task 4 Wokwi Simulation](https://wokwi.com/projects/474042704490273793)
+https://wokwi.com/projects/474042704490273793
 
 ## Current Configuration
 
@@ -267,7 +267,7 @@ The RSSI value is monitored to assess Wi-Fi communication quality.
 
 ## Wokwi Simulation
 
-[Open Task 5 Wokwi Simulation]https://wokwi.com/projects/474042704490273793
+https://wokwi.com/projects/474042704490273793
 
 ## Current Configuration
 
@@ -278,3 +278,90 @@ The telemetry system monitors cell voltages, weakest and strongest cells, relay 
 The offline queue can store up to 12 telemetry events.
 
 The Blynk dashboard displays real-time battery and communication information and distinguishes between LIVE and QUEUED telemetry.
+
+---
+
+# Enterprise Blynk Analytics and Decision Dashboard
+
+## Task 6 – Enterprise Blynk Analytics and Decision Dashboard
+
+This project implements an advanced analytics and decision dashboard for an ESP32-based EV Battery Management System (BMS) using Blynk IoT.
+
+The system analyzes battery health, voltage imbalance, risk level, fault history, state transitions, and operating conditions to provide real-time analytics and operator recommendations.
+
+## Features
+
+* Real-time battery health monitoring
+* State of Charge (SoC) monitoring
+* Cell voltage imbalance analysis
+* Imbalance trend monitoring
+* Composite battery risk score
+* Risk level classification
+* Structured fault history
+* Fault source identification
+* State transition tracking
+* Uptime monitoring
+* Fault count monitoring
+* Operator recommendations
+* Current system state monitoring
+* Historical Blynk data visualization
+* Executive summary dashboard
+* Non-blocking analytics updates using `millis()`
+
+## Working Principle
+
+The system continuously analyzes battery and system parameters received from the BMS engine.
+
+A composite risk score is calculated using factors such as cell voltage imbalance, fault frequency, and battery SoC.
+
+The calculated risk score is classified into four levels:
+
+* LOW
+* MEDIUM
+* HIGH
+* CRITICAL
+
+Battery health is calculated from the overall risk condition. The system also records fault events and state transitions with timestamps, fault sources, and operating states.
+
+Based on the current battery condition and system state, the dashboard generates human-readable operator recommendations such as battery monitoring, cell inspection, or immediate safety inspection.
+
+The Blynk dashboard provides an executive summary containing battery health, SoC, risk score, risk level, uptime, fault count, current state, and operator recommendation.
+
+## Technology Used
+
+* ESP32
+* Arduino C++
+* Blynk IoT
+* Wi-Fi
+* Wokwi Simulator
+* GitHub
+
+## Wokwi Simulation
+
+https://wokwi.com/projects/474042704490273793
+
+## Current Configuration
+
+The current implementation uses 4 simulated battery cells.
+
+The analytics system monitors:
+
+* Cell voltages
+* Weakest and strongest cells
+* SoC
+* Voltage imbalance
+* Imbalance trend
+* Risk score
+* Risk level
+* Battery health
+* Fault count
+* State transition count
+* Fault source
+* Current system state
+* Uptime
+* Operator recommendation
+
+The Blynk dashboard provides real-time analytics and an executive summary of the EV battery system.
+
+The system also supports fault injection and network outage demonstrations to verify that the dashboard accurately reflects changes in the backend state.
+
