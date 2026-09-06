@@ -1,5 +1,50 @@
 # EV Battery Management System using ESP32
 
+# EV Battery Management System (BMS) using ESP32
+
+## Introduction
+
+This project is an ESP32-based **real-time Electric Vehicle Battery Management System (BMS)** designed to monitor, protect, analyze, and communicate battery conditions. It combines battery monitoring, safety protection, fault handling, LCD visualization, event-driven telemetry, and a live Blynk analytics dashboard into one integrated system.
+
+## What This Project Does
+
+The system continuously monitors multiple battery cells and identifies the **weakest and strongest cells, voltage imbalance, battery SoC, faults, system state, and communication health**. It uses non-blocking logic to respond to abnormal conditions without interrupting normal operation.
+
+The project is divided into **six development tasks**, progressing from modular battery analysis to advanced cloud-based analytics and decision support.
+
+## Key Capabilities
+
+* 🔋 **Battery Monitoring** – Cell voltage, SoC, imbalance, weakest and strongest cells
+* 🛡️ **Safety Protection** – Fault detection, relay protection, debounce and recovery
+* 📟 **Smart LCD Display** – Flicker-free pages with critical fault override
+* ⚙️ **Fault State Machine** – NORMAL, DEGRADED, FAILSAFE and SHUTDOWN states
+* 📡 **Live Telemetry** – Event-driven data transmission with offline queue support
+* 📊 **Blynk Analytics** – Risk score, battery health, fault history and operator recommendations
+
+## Why It Is Useful
+
+A BMS is essential in EVs because battery cells must operate within safe electrical and operational limits. This project demonstrates how an embedded controller can **detect abnormal battery conditions, protect the system, maintain reliable communication, and provide meaningful information to an operator in real time**.
+
+## Benefits
+
+* Improves battery safety and reliability
+* Detects cell imbalance and abnormal conditions early
+* Reduces unnecessary data transmission
+* Provides reliable operation during network failures
+* Enables real-time remote monitoring
+* Converts raw battery data into useful health and risk information
+* Demonstrates a scalable architecture suitable for larger battery packs
+
+## Technology Stack
+
+**ESP32 • Arduino C++ • Blynk IoT • Wi-Fi • 16×2 I2C LCD • Wokwi**
+
+## Conclusion
+
+This project demonstrates a complete **embedded EV-BMS workflow**, from cell-level monitoring and protection to fault management, telemetry, and cloud-based analytics. The modular and non-blocking architecture makes the system easier to scale, maintain, and extend for future EV battery applications.
+
+---
+
 ## Task 1 – Modular Battery Management Engine
 
 This project implements a modular Battery Management System (BMS) engine using ESP32 and Wokwi simulation.
