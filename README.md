@@ -1,7 +1,5 @@
 # EV Battery Management System using ESP32
 
-# EV Battery Management System (BMS) using ESP32
-
 ## Introduction
 
 This project is an ESP32-based **real-time Electric Vehicle Battery Management System (BMS)** designed to monitor, protect, analyze, and communicate battery conditions. It combines battery monitoring, safety protection, fault handling, LCD visualization, event-driven telemetry, and a live Blynk analytics dashboard into one integrated system.
