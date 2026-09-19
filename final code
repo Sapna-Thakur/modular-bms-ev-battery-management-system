@@ -1,0 +1,470 @@
+#define BLYNK_TEMPLATE_ID "TMPL3RvbjIhYD"
+#define BLYNK_TEMPLATE_NAME "EV BMS"
+#define BLYNK_AUTH_TOKEN "DoMf6AhtkzEzt_urdJOPIJMJqNCK43ZF"
+
+#include <WiFi.h>
+#include <BlynkSimpleEsp32.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <Preferences.h>
+#include <esp_task_wdt.h>
+
+#define CELL_COUNT 4
+#define WDT_TIMEOUT_SECONDS 5
+
+const int CELL_PINS[CELL_COUNT] = {32, 33, 34, 35};
+
+#define GREEN_LED    25
+#define RELAY_PIN    26
+#define YELLOW_LED   27
+#define RED_LED      14
+#define BUZZER_PIN   13
+#define ONE_WIRE_PIN 4
+#define LCD_SDA      21
+#define LCD_SCL      22
+
+const float ADC_MAX_RES = 4095.0f;
+const float ADC_REF_VOLT = 3.3f;
+const float VOLT_DIVIDER_RATIO = 2.0f;
+const float CALIB_FACTOR = 1.018f;
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+OneWire oneWire(ONE_WIRE_PIN);
+DallasTemperature tempSensor(&oneWire);
+Preferences nvsStorage;
+
+const float UNDER_VOLTAGE = 3.20f;
+const float OVER_VOLTAGE = 4.20f;
+const unsigned long FAULT_DEBOUNCE_TIME = 1000;
+const unsigned long RECOVERY_TIME = 3000;
+
+enum BMSState { NORMAL, DEGRADED, FAILSAFE, SHUTDOWN };
+BMSState systemState = NORMAL;
+
+enum WiFiState { WIFI_DISCONNECTED, WIFI_CONNECTING, WIFI_CONNECTED };
+WiFiState wifiState = WIFI_DISCONNECTED;
+
+struct TelemetryEvent {
+  unsigned long timestamp;
+  float imbalance, soc;
+  int weakest, strongest;
+  bool relay;
+  String fault, state;
+  int rssi;
+};
+
+#define QUEUE_SIZE 12
+TelemetryEvent telemetryQueue[QUEUE_SIZE];
+int queueHead = 0, queueTail = 0, queueCount = 0;
+
+float cellVoltage[CELL_COUNT] = {3.82f, 3.76f, 3.88f, 3.65f};
+float soc = 82.0f;
+float minimumVoltage = 0.0f, maximumVoltage = 0.0f;
+float imbalance = 0.0f, previousImbalance = 0.0f, imbalanceTrend = 0.0f;
+int weakestCell = 1, strongestCell = 1;
+float adaptiveThreshold = 0.10f;
+float temperatureC = 25.0f;
+
+bool relayState = true;
+bool faultActive = false;
+bool recoveryRunning = false;
+unsigned long faultStartTime = 0, recoveryStartTime = 0;
+
+String faultSource = "NONE";
+String faultState = "NO_FAULT";
+int faultCount = 0, stateTransitionCount = 0, faultID = 0;
+
+float riskScore = 0.0f;
+String riskLevel = "LOW";
+float batteryHealth = 100.0f;
+String recommendation = "Battery operating normally";
+unsigned long systemStartTime = 0, uptimeSeconds = 0;
+
+const char* WIFI_SSID = "Wokwi-GUEST";
+const char* WIFI_PASSWORD = "";
+unsigned long lastWiFiCheck = 0;
+bool demoFault = false, demoNetworkOutage = false;
+
+unsigned long lastBatteryUpdate = 0, lastAnalyticsUpdate = 0, lastTelemetryUpdate = 0;
+unsigned long lastLCDUpdate = 0, lastPageChange = 0;
+int currentPage = 0;
+String lcdLine1 = "", lcdLine2 = "";
+
+// Forward declarations
+void initHardwareWatchdog();
+void loadPersistentMetrics();
+void recordFaultEvent(String faultType);
+float readCalibratedADC(int pin);
+void executeBatterySampling();
+void evaluateCellMetrics();
+void executeRiskEngine();
+void processStateMachineTransitions();
+void executeProtectionLogic();
+void updateRelayState(bool state);
+void updateHardwareIndicators();
+void updateDisplayManager();
+void writeDisplayBuffer(String l1, String l2);
+void queueTelemetryLog();
+void transmitTelemetryQueue();
+void updateBlynkTelemetry();
+void processSerialInterface();
+void printConsoleSummary();
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(GREEN_LED, OUTPUT);
+  pinMode(YELLOW_LED, OUTPUT);
+  pinMode(RED_LED, OUTPUT);
+  pinMode(RELAY_PIN, OUTPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+
+  digitalWrite(GREEN_LED, LOW);
+  digitalWrite(YELLOW_LED, LOW);
+  digitalWrite(RED_LED, LOW);
+  digitalWrite(RELAY_PIN, LOW);
+  digitalWrite(BUZZER_PIN, LOW);
+
+  Wire.begin(LCD_SDA, LCD_SCL);
+  lcd.init();
+  lcd.backlight();
+  tempSensor.begin();
+
+  initHardwareWatchdog();
+  loadPersistentMetrics();
+
+  systemStartTime = millis();
+
+  writeDisplayBuffer("EV BMS SYSTEM", "INITIALIZING...");
+  Blynk.config(BLYNK_AUTH_TOKEN);
+
+  updateRelayState(true);
+  Serial.println("[BMS Core] Initialization Complete.");
+}
+
+void loop() {
+  esp_task_wdt_reset();
+  unsigned long now = millis();
+
+  if (now - lastWiFiCheck >= 250) {
+    lastWiFiCheck = now;
+    if (!demoNetworkOutage && WiFi.status() == WL_CONNECTED) {
+      wifiState = WIFI_CONNECTED;
+      Blynk.run();
+    } else if (!demoNetworkOutage && wifiState == WIFI_DISCONNECTED) {
+      WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+      wifiState = WIFI_CONNECTING;
+    }
+  }
+
+  if (now - lastBatteryUpdate >= 1000) {
+    lastBatteryUpdate = now;
+    executeBatterySampling();
+  }
+
+  if (now - lastAnalyticsUpdate >= 1000) {
+    lastAnalyticsUpdate = now;
+    evaluateCellMetrics();
+    executeRiskEngine();
+    processStateMachineTransitions();
+    executeProtectionLogic();
+    updateHardwareIndicators();
+    printConsoleSummary();
+  }
+
+  updateDisplayManager();
+
+  if (now - lastTelemetryUpdate >= 1000) {
+    lastTelemetryUpdate = now;
+    queueTelemetryLog();
+    transmitTelemetryQueue();
+    updateBlynkTelemetry();
+  }
+
+  processSerialInterface();
+}
+
+void initHardwareWatchdog() {
+#if ESP_ARDUINO_VERSION >= ESP_ARDUINO_VERSION_VAL(3, 0, 0)
+  esp_task_wdt_config_t wdt_config = {
+      .timeout_ms = WDT_TIMEOUT_SECONDS * 1000,
+      .idle_core_mask = (1 << portNUM_PROCESSORS) - 1,
+      .trigger_panic = true
+  };
+  esp_task_wdt_init(&wdt_config);
+#else
+  esp_task_wdt_init(WDT_TIMEOUT_SECONDS, true);
+#endif
+  esp_task_wdt_add(NULL);
+}
+
+void loadPersistentMetrics() {
+  nvsStorage.begin("bms_sys", true);
+  faultCount = nvsStorage.getInt("flt_cnt", 0);
+  nvsStorage.end();
+}
+
+void recordFaultEvent(String faultType) {
+  nvsStorage.begin("bms_sys", false);
+  faultCount++;
+  nvsStorage.putInt("flt_cnt", faultCount);
+  nvsStorage.putString("last_err", faultType);
+  nvsStorage.end();
+}
+
+float readCalibratedADC(int pin) {
+  float sum = 0.0f;
+  for (int i = 0; i < 8; i++) {
+    sum += analogRead(pin);
+    delayMicroseconds(100);
+  }
+  return (((sum / 8.0f) / ADC_MAX_RES) * ADC_REF_VOLT * VOLT_DIVIDER_RATIO) * CALIB_FACTOR;
+}
+
+void executeBatterySampling() {
+  if (demoFault) {
+    cellVoltage[3] = 3.05f;
+  } else {
+    cellVoltage[0] -= 0.001f; cellVoltage[1] -= 0.001f;
+    cellVoltage[2] += 0.001f; cellVoltage[3] += 0.001f;
+
+    if (cellVoltage[0] < 3.50f) cellVoltage[0] = 3.82f;
+    if (cellVoltage[1] < 3.50f) cellVoltage[1] = 3.76f;
+    if (cellVoltage[2] > 4.05f) cellVoltage[2] = 3.88f;
+    if (cellVoltage[3] > 3.90f) cellVoltage[3] = 3.65f;
+  }
+
+  soc -= 0.01f;
+  if (soc < 70.0f) soc = 82.0f;
+
+  tempSensor.requestTemperatures();
+  float temp = tempSensor.getTempCByIndex(0);
+  if (temp > -50.0f && temp < 125.0f) temperatureC = temp;
+}
+
+void evaluateCellMetrics() {
+  minimumVoltage = cellVoltage[0];
+  maximumVoltage = cellVoltage[0];
+  weakestCell = 1; strongestCell = 1;
+
+  for (int i = 1; i < CELL_COUNT; i++) {
+    if (cellVoltage[i] < minimumVoltage) { minimumVoltage = cellVoltage[i]; weakestCell = i + 1; }
+    if (cellVoltage[i] > maximumVoltage) { maximumVoltage = cellVoltage[i]; strongestCell = i + 1; }
+  }
+
+  previousImbalance = imbalance;
+  imbalance = maximumVoltage - minimumVoltage;
+  imbalanceTrend = imbalance - previousImbalance;
+
+  adaptiveThreshold = (soc >= 80.0f) ? 0.08f : ((soc >= 50.0f) ? 0.10f : 0.12f);
+  uptimeSeconds = (millis() - systemStartTime) / 1000;
+}
+
+void executeRiskEngine() {
+  float imbalanceRisk = min((imbalance / 0.30f) * 40.0f, 40.0f);
+  float faultRisk = min((float)faultCount * 10.0f, 30.0f);
+  float socRisk = (soc < 30.0f) ? 30.0f : ((soc < 50.0f) ? 20.0f : 10.0f);
+
+  riskScore = min(imbalanceRisk + faultRisk + socRisk, 100.0f);
+
+  if (riskScore < 25.0f) riskLevel = "LOW";
+  else if (riskScore < 50.0f) riskLevel = "MEDIUM";
+  else if (riskScore < 75.0f) riskLevel = "HIGH";
+  else riskLevel = "CRITICAL";
+
+  batteryHealth = 100.0f - riskScore;
+
+  if (systemState == SHUTDOWN) recommendation = "Immediate shutdown inspection";
+  else if (systemState == FAILSAFE) recommendation = "Verify battery safety";
+  else if (faultActive) recommendation = "Inspect affected battery cell";
+  else if (imbalance >= adaptiveThreshold) recommendation = "Check cell balancing";
+  else if (riskLevel == "MEDIUM") recommendation = "Monitor battery condition";
+  else recommendation = "Battery operating normally";
+}
+
+void processStateMachineTransitions() {
+  BMSState oldState = systemState;
+
+  if (faultActive) {
+    systemState = (riskScore >= 75.0f) ? SHUTDOWN : ((riskScore >= 50.0f) ? FAILSAFE : DEGRADED);
+  } else {
+    systemState = (riskScore >= 75.0f) ? FAILSAFE : ((riskScore >= 50.0f) ? DEGRADED : NORMAL);
+  }
+
+  if (oldState != systemState) {
+    stateTransitionCount++;
+    Serial.printf("[FSM] State Changed | Old: %d | New: %d | ID: %d\n", oldState, systemState, faultID);
+  }
+}
+
+void executeProtectionLogic() {
+  bool unsafe = false;
+
+  for (int i = 0; i < CELL_COUNT; i++) {
+    if (cellVoltage[i] < UNDER_VOLTAGE || cellVoltage[i] > OVER_VOLTAGE) {
+      unsafe = true;
+      faultSource = "BATTERY";
+      faultState = (cellVoltage[i] < UNDER_VOLTAGE) ? "UNDER_VOLTAGE" : "OVER_VOLTAGE";
+    }
+  }
+
+  if (demoFault) {
+    unsafe = true;
+    faultSource = "BATTERY";
+    faultState = "UNDER_VOLTAGE";
+  }
+
+  if (unsafe) {
+    recoveryRunning = false;
+    if (faultStartTime == 0) faultStartTime = millis();
+
+    if (millis() - faultStartTime >= FAULT_DEBOUNCE_TIME) {
+      if (!faultActive) {
+        faultActive = true;
+        faultID++;
+        recordFaultEvent(faultState);
+        Serial.printf(">>> FAULT CONFIRMED | ID: %d | Cause: %s <<<\n", faultID, faultState.c_str());
+      }
+      updateRelayState(false);
+    }
+    return;
+  }
+
+  faultStartTime = 0;
+
+  if (faultActive) {
+    if (!recoveryRunning) {
+      recoveryRunning = true;
+      recoveryStartTime = millis();
+    }
+
+    if (millis() - recoveryStartTime >= RECOVERY_TIME) {
+      faultActive = false;
+      recoveryRunning = false;
+      faultState = "NO_FAULT";
+      faultSource = "NONE";
+      updateRelayState(true);
+      Serial.println("[RECOVERY] Verified - Relay CLOSED");
+    }
+    return;
+  }
+
+  updateRelayState(true);
+}
+
+void updateRelayState(bool state) {
+  relayState = state;
+  digitalWrite(RELAY_PIN, relayState ? HIGH : LOW);
+}
+
+void updateHardwareIndicators() {
+  digitalWrite(GREEN_LED, systemState == NORMAL);
+  digitalWrite(YELLOW_LED, systemState == DEGRADED);
+  digitalWrite(RED_LED, systemState == FAILSAFE || systemState == SHUTDOWN);
+
+  if (faultActive && systemState != NORMAL) {
+    tone(BUZZER_PIN, 2000, 100);
+  }
+}
+
+void updateDisplayManager() {
+  unsigned long now = millis();
+  if (now - lastPageChange >= 3000) {
+    lastPageChange = now;
+    currentPage = (currentPage + 1) % 3;
+  }
+
+  if (now - lastLCDUpdate < 500) return;
+  lastLCDUpdate = now;
+
+  if (faultActive) {
+    writeDisplayBuffer("FAULT ACTIVE", faultState);
+    return;
+  }
+
+  if (currentPage == 0) {
+    writeDisplayBuffer("C1:" + String(cellVoltage[0], 2) + " C2:" + String(cellVoltage[1], 2),
+                       "C3:" + String(cellVoltage[2], 2) + " C4:" + String(cellVoltage[3], 2));
+  } else if (currentPage == 1) {
+    String stName = (systemState == NORMAL) ? "NORMAL" : ((systemState == DEGRADED) ? "DEGRADED" : "FAILSAFE");
+    writeDisplayBuffer("STATE:" + stName, "RELAY:" + String(relayState ? "ON" : "OFF"));
+  } else {
+    writeDisplayBuffer("SOC:" + String(soc, 0) + "% R:" + String(riskScore, 0),
+                       "TEMP:" + String(temperatureC, 1) + "C");
+  }
+}
+
+void writeDisplayBuffer(String line1, String line2) {
+  while (line1.length() < 16) line1 += " ";
+  while (line2.length() < 16) line2 += " ";
+
+  if (line1 != lcdLine1) {
+    lcd.setCursor(0, 0);
+    lcd.print(line1.substring(0, 16));
+    lcdLine1 = line1;
+  }
+  if (line2 != lcdLine2) {
+    lcd.setCursor(0, 1);
+    lcd.print(line2.substring(0, 16));
+    lcdLine2 = line2;
+  }
+}
+
+void queueTelemetryLog() {
+  static float lastImbalance = -1;
+  if (abs(imbalance - lastImbalance) < 0.005f && !faultActive) return;
+  lastImbalance = imbalance;
+
+  TelemetryEvent ev = { millis(), imbalance, soc, weakestCell, strongestCell, relayState, faultState, "RUNNING", WiFi.RSSI() };
+
+  if (queueCount < QUEUE_SIZE) {
+    telemetryQueue[queueTail] = ev;
+    queueTail = (queueTail + 1) % QUEUE_SIZE;
+    queueCount++;
+  }
+}
+
+void transmitTelemetryQueue() {
+  if (WiFi.status() != WL_CONNECTED || !Blynk.connected() || queueCount == 0) return;
+
+  TelemetryEvent ev = telemetryQueue[queueHead];
+
+  Blynk.virtualWrite(V30, ev.imbalance);
+  Blynk.virtualWrite(V31, ev.soc);
+  Blynk.virtualWrite(V32, ev.weakest);
+  Blynk.virtualWrite(V33, ev.strongest);
+
+  queueHead = (queueHead + 1) % QUEUE_SIZE;
+  queueCount--;
+}
+
+void updateBlynkTelemetry() {
+  if (!Blynk.connected()) return;
+
+  Blynk.virtualWrite(V0, cellVoltage[0]);
+  Blynk.virtualWrite(V1, cellVoltage[1]);
+  Blynk.virtualWrite(V2, cellVoltage[2]);
+  Blynk.virtualWrite(V3, cellVoltage[3]);
+  Blynk.virtualWrite(V4, weakestCell);
+  Blynk.virtualWrite(V5, strongestCell);
+  Blynk.virtualWrite(V8, relayState ? 1 : 0);
+  Blynk.virtualWrite(V9, faultState);
+  Blynk.virtualWrite(V18, riskScore);
+  Blynk.virtualWrite(V20, batteryHealth);
+}
+
+void processSerialInterface() {
+  if (!Serial.available()) return;
+  char cmd = Serial.read();
+  if (cmd == 'F' || cmd == 'f') demoFault = true;
+  if (cmd == 'C' || cmd == 'c') demoFault = false;
+  if (cmd == 'N' || cmd == 'n') demoNetworkOutage = true;
+  if (cmd == 'R' || cmd == 'r') demoNetworkOutage = false;
+}
+
+void printConsoleSummary() {
+  Serial.printf("[SUMMARY] Health: %.1f%% | SoC: %.1f%% | Imbalance: %.3fV | Risk: %.1f | Relay: %s\n",
+                batteryHealth, soc, imbalance, riskScore, relayState ? "ON" : "OFF");
+}
