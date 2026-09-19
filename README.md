@@ -408,3 +408,4 @@ The Blynk dashboard provides real-time analytics and an executive summary of the
 
 The system also supports fault injection and network outage demonstrations to verify that the dashboard accurately reflects changes in the backend state.
 
+<img width="990" height="1140" alt="Screenshot 2026-09-19 010630" src="https://github.com/user-attachments/assets/3726a08f-e24a-4429-a07c-77eb0b2ab82f" />
