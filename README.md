@@ -42,6 +42,8 @@ A BMS is essential in EVs because battery cells must operate within safe electri
 This project demonstrates a complete **embedded EV-BMS workflow**, from cell-level monitoring and protection to fault management, telemetry, and cloud-based analytics. The modular and non-blocking architecture makes the system easier to scale, maintain, and extend for future EV battery applications.
 
 ---
+<img width="1215" height="1295" alt="architecture-diagram" src="https://github.com/user-attachments/assets/d1d53efb-be2c-4de0-b3c6-fb0061876b0f" />
+
 
 ## Task 1 – Modular Battery Management Engine
 
